@@ -11,7 +11,8 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         NavigationStack {
-            Image("TajMahal")
+            Image(ImageName.tajmahal.rawValue)
+            HeaderWelcome()
             Spacer()
             NavigationLink {
                 MenuView()

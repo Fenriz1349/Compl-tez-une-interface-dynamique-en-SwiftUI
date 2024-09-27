@@ -23,6 +23,7 @@ struct WelcomeRow: View {
             if let content = contentTrailing {
                 Text(content.capitalizeFirstLetter())
                     .modifier(WelcomeTextStyle())
+                    .fontWeight(.medium)
             }
         }
     }
@@ -30,5 +31,5 @@ struct WelcomeRow: View {
 }
 
 #Preview {
-    WelcomeRow(symbol:.location , contentLeading: "Mardi", contentTrailing: "11h30 - 14h30 . 18h30 - 22h00")
+    WelcomeRow(symbol:.location , contentLeading: "Mardi", contentTrailing: "11h30 - 14h30 · 18h30 - 22h00")
 }

@@ -13,17 +13,17 @@ func getScheduleOfDay(_ day: Date) -> String {
     
     switch dayString {
     case "lundi" :
-        return "11h30 - 14h30 . 18h30 - 22h00"
+        return "11h30 - 14h30 · 18h30 - 22h00"
     case "mardi" :
-        return "11h30 - 14h30 . 18h30 - 22h00"
+        return "11h30 - 14h30 · 18h30 - 22h00"
     case "mercredi" :
-        return "11h30 - 14h30 . 18h30 - 22h00"
+        return "11h30 - 14h30 · 18h30 - 22h00"
     case "jeud" :
-        return "11h30 - 14h30 . 18h30 - 22h00"
+        return "11h30 - 14h30 · 18h30 - 22h00"
     case "vendredi" :
-        return "11h30 - 14h30 . 18h30 - 22h00"
+        return "11h30 - 14h30 · 18h30 - 23h00"
     case "samedi":
-        return "11h30 - 22h00"
+        return "11h30 - 23h00"
     case "dimanche" :
         return "fermé"
     default : return "jour invalide"

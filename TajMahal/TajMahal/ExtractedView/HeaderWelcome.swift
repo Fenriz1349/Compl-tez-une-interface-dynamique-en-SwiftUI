@@ -12,11 +12,10 @@ struct HeaderWelcome: View {
         HStack{
             VStack(alignment: .leading) {
                 Text("Restaurant Indien")
-                    .fontWeight(.light)
-                    .font(.system(size: 14))
+                    .modifier(BodyTextStyle())
+                Spacer()
                 Text("Taj Mahal")
-                    .font(.system(size: 20))
-                    .fontWeight(.bold)
+                    .modifier(MainTitleTextStyle())
             }
             Spacer()
             Image(ImageName.logo.rawValue)
@@ -27,7 +26,6 @@ struct HeaderWelcome: View {
                 .foregroundColor(.gray)
         }
         .frame(height: 40)
-        .padding(20)
     }
 }
 

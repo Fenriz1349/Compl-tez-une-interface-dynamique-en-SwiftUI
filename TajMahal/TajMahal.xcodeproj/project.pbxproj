@@ -14,8 +14,12 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
+		688777842CA6F74500D5D1D2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688777832CA6F74500D5D1D2 /* String+Extensions.swift */; };
+		688777862CA6FA6D00D5D1D2 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688777852CA6FA6D00D5D1D2 /* Functions.swift */; };
 		68CBE20A2CA6DBA300064CC5 /* HeaderWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBE2092CA6DBA300064CC5 /* HeaderWelcome.swift */; };
 		68CBE20D2CA6DBF700064CC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBE20C2CA6DBF700064CC5 /* Constants.swift */; };
+		68CBE2112CA6DF8C00064CC5 /* WelcomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBE2102CA6DF8C00064CC5 /* WelcomeRow.swift */; };
+		68CBE2132CA6E93000064CC5 /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBE2122CA6E93000064CC5 /* TextStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +32,12 @@
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		688777832CA6F74500D5D1D2 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		688777852CA6FA6D00D5D1D2 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		68CBE2092CA6DBA300064CC5 /* HeaderWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWelcome.swift; sourceTree = "<group>"; };
 		68CBE20C2CA6DBF700064CC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		68CBE2102CA6DF8C00064CC5 /* WelcomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRow.swift; sourceTree = "<group>"; };
+		68CBE2122CA6E93000064CC5 /* TextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		42E9DCAC2AF11136007CE7D0 /* TajMahal */ = {
 			isa = PBXGroup;
 			children = (
+				688777822CA6F71600D5D1D2 /* Extensions */,
 				68CBE20B2CA6DBD400064CC5 /* Models */,
 				68CBE2082CA6DB9400064CC5 /* ExtractedView */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
@@ -90,10 +99,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		688777822CA6F71600D5D1D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				688777832CA6F74500D5D1D2 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		68CBE2082CA6DB9400064CC5 /* ExtractedView */ = {
 			isa = PBXGroup;
 			children = (
 				68CBE2092CA6DBA300064CC5 /* HeaderWelcome.swift */,
+				68CBE2102CA6DF8C00064CC5 /* WelcomeRow.swift */,
 			);
 			path = ExtractedView;
 			sourceTree = "<group>";
@@ -104,6 +122,8 @@
 				68CBE20C2CA6DBF700064CC5 /* Constants.swift */,
 				428D2B502AFA851900BBA4F5 /* Model.swift */,
 				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
+				68CBE2122CA6E93000064CC5 /* TextStyles.swift */,
+				688777852CA6FA6D00D5D1D2 /* Functions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688777842CA6F74500D5D1D2 /* String+Extensions.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
+				68CBE2112CA6DF8C00064CC5 /* WelcomeRow.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
+				688777862CA6FA6D00D5D1D2 /* Functions.swift in Sources */,
+				68CBE2132CA6E93000064CC5 /* TextStyles.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				68CBE20D2CA6DBF700064CC5 /* Constants.swift in Sources */,

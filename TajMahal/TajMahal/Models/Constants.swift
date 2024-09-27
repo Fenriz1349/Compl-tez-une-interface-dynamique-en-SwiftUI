@@ -23,4 +23,11 @@ enum ImageName : String{
     case biryani = "Biryani"
     case roganJosh = "Rogan Josh"
     case tikkaMasala = "Tikka Masala"
+    
+    //symbols pour le WelcomeScreen
+    case clock = "Clock"
+    case serviceType = "Service Type"
+    case location = "Location"
+    case website = "Internet Site"
+    case phone = "Phone"
 }

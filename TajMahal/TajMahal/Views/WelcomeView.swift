@@ -15,33 +15,34 @@ struct WelcomeView: View {
     }
     var body: some View {
         NavigationStack {
-            Image(.tajMahal)
-                .padding(.top,10)
-            Spacer()
-            HeaderWelcome()
-            Spacer()
-            VStack {
-                WelcomeRow(symbol: .clock, contentLeading: .day, contentTrailing: .schedule)
-                WelcomeRow(symbol: .serviceType, contentLeading: .serviceTypeCategory, contentTrailing: .serviceTypeName)
-                WelcomeRow(symbol: .location, contentLeading: .location)
-                WelcomeRow(symbol: .internetSite, contentLeading: .website)
-                WelcomeRow(symbol: .phone, contentLeading: .phoneNumber)
-            }
-            Spacer()
-            NavigationLink {
-                MenuView()
-            } label : {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundStyle(.customRed)
-                        .frame(height: 40)
-                    Text("Accéder au Menu")
-                        .foregroundStyle(.white)
+            ZStack {
+                Color.lightBackground
+                    .ignoresSafeArea()
+                
+                VStack {
+                    Image(.tajMahal)
+                        .padding(.top,10)
+                    Spacer()
+                    HeaderWelcome()
+                    Spacer()
+                    VStack {
+                        WelcomeRow(symbol: .clock, contentLeading: .day, contentTrailing: .schedule)
+                        WelcomeRow(symbol: .serviceType, contentLeading: .serviceTypeCategory, contentTrailing: .serviceTypeName)
+                        WelcomeRow(symbol: .location, contentLeading: .location)
+                        WelcomeRow(symbol: .internetSite, contentLeading: .website)
+                        WelcomeRow(symbol: .phone, contentLeading: .phoneNumber)
+                    }
+                    Spacer()
+                    NavigationLink {
+                        MenuView()
+                    } label : {
+                        MenuButton()
+                    }
+                    .padding(.bottom,10)
                 }
+                .padding(.horizontal,20)
             }
-            .padding(.bottom,10)
         }
-        .padding(.horizontal,20)
     }
 }
 

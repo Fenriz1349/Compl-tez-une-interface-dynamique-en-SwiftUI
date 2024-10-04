@@ -16,10 +16,17 @@ enum SpiceLevel {
 
 // Représente l'objet "plat", qui figure sur la carte du menu
 struct Dish {
-    var name: String
-    var description: String
-    var allergens: String
-    var ingredients: String
-    var spiceLevel: SpiceLevel
-    var imageName: ImageResource
+    let name: String
+    let category: DishCategory
+    let description: String
+    let allergens: String
+    let price : Float
+    let ingredients: String
+    let spiceLevel: SpiceLevel
+    let imageName: ImageResource
+}
+
+enum DishCategory {
+    case appetizer
+    case mainCourse
 }

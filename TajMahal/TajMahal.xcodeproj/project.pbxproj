@@ -16,6 +16,13 @@
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
 		688777842CA6F74500D5D1D2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688777832CA6F74500D5D1D2 /* String+Extensions.swift */; };
 		688777862CA6FA6D00D5D1D2 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688777852CA6FA6D00D5D1D2 /* Functions.swift */; };
+		68AD7A4A2CAFEA8F0084D274 /* DishDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD7A492CAFEA8F0084D274 /* DishDetailScreen.swift */; };
+		68AD7A4C2CAFEBA40084D274 /* DishCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD7A4B2CAFEBA40084D274 /* DishCard.swift */; };
+		68AD7A502CAFEC4A0084D274 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD7A4F2CAFEC4A0084D274 /* MenuButton.swift */; };
+		68AD7A522CB00C3C0084D274 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD7A512CB00C3C0084D274 /* Float+Extensions.swift */; };
+		68AD7A542CB00CD50084D274 /* SpiceLevelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD7A532CB00CD50084D274 /* SpiceLevelCard.swift */; };
+		68AD7A562CB010C40084D274 /* ChiliImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD7A552CB010C40084D274 /* ChiliImage.swift */; };
+		68AD7A582CB02B710084D274 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD7A572CB02B710084D274 /* CustomBackButton.swift */; };
 		68CBE20A2CA6DBA300064CC5 /* HeaderWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBE2092CA6DBA300064CC5 /* HeaderWelcome.swift */; };
 		68CBE20D2CA6DBF700064CC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBE20C2CA6DBF700064CC5 /* Constants.swift */; };
 		68CBE2112CA6DF8C00064CC5 /* WelcomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CBE2102CA6DF8C00064CC5 /* WelcomeRow.swift */; };
@@ -34,6 +41,13 @@
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		688777832CA6F74500D5D1D2 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		688777852CA6FA6D00D5D1D2 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		68AD7A492CAFEA8F0084D274 /* DishDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailScreen.swift; sourceTree = "<group>"; };
+		68AD7A4B2CAFEBA40084D274 /* DishCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCard.swift; sourceTree = "<group>"; };
+		68AD7A4F2CAFEC4A0084D274 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		68AD7A512CB00C3C0084D274 /* Float+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
+		68AD7A532CB00CD50084D274 /* SpiceLevelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceLevelCard.swift; sourceTree = "<group>"; };
+		68AD7A552CB010C40084D274 /* ChiliImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiliImage.swift; sourceTree = "<group>"; };
+		68AD7A572CB02B710084D274 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		68CBE2092CA6DBA300064CC5 /* HeaderWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWelcome.swift; sourceTree = "<group>"; };
 		68CBE20C2CA6DBF700064CC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		68CBE2102CA6DF8C00064CC5 /* WelcomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRow.swift; sourceTree = "<group>"; };
@@ -95,6 +109,7 @@
 			children = (
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
+				68AD7A492CAFEA8F0084D274 /* DishDetailScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				688777832CA6F74500D5D1D2 /* String+Extensions.swift */,
+				68AD7A512CB00C3C0084D274 /* Float+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -112,6 +128,11 @@
 			children = (
 				68CBE2092CA6DBA300064CC5 /* HeaderWelcome.swift */,
 				68CBE2102CA6DF8C00064CC5 /* WelcomeRow.swift */,
+				68AD7A4B2CAFEBA40084D274 /* DishCard.swift */,
+				68AD7A4F2CAFEC4A0084D274 /* MenuButton.swift */,
+				68AD7A532CB00CD50084D274 /* SpiceLevelCard.swift */,
+				68AD7A552CB010C40084D274 /* ChiliImage.swift */,
+				68AD7A572CB02B710084D274 /* CustomBackButton.swift */,
 			);
 			path = ExtractedView;
 			sourceTree = "<group>";
@@ -199,16 +220,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				688777842CA6F74500D5D1D2 /* String+Extensions.swift in Sources */,
+				68AD7A542CB00CD50084D274 /* SpiceLevelCard.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
+				68AD7A502CAFEC4A0084D274 /* MenuButton.swift in Sources */,
 				68CBE2112CA6DF8C00064CC5 /* WelcomeRow.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
+				68AD7A4A2CAFEA8F0084D274 /* DishDetailScreen.swift in Sources */,
 				688777862CA6FA6D00D5D1D2 /* Functions.swift in Sources */,
 				68CBE2132CA6E93000064CC5 /* TextStyles.swift in Sources */,
+				68AD7A4C2CAFEBA40084D274 /* DishCard.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				68AD7A522CB00C3C0084D274 /* Float+Extensions.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				68CBE20D2CA6DBF700064CC5 /* Constants.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
+				68AD7A582CB02B710084D274 /* CustomBackButton.swift in Sources */,
 				68CBE20A2CA6DBA300064CC5 /* HeaderWelcome.swift in Sources */,
+				68AD7A562CB010C40084D274 /* ChiliImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

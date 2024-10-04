@@ -12,7 +12,8 @@ struct MainTitleTextStyle: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .font(.system(size: 20))
+            .font(.system(size: 18))
+            .foregroundStyle(.titleBlack)
             .fontWeight(.bold)
     }
 }
@@ -22,8 +23,9 @@ struct TitleTextStyle: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .font(.system(size: 18))
-            .foregroundStyle(.gray)
+            .font(.system(size: 14))
+            .foregroundStyle(.bodyBlack)
+            .fontWeight(.bold)
     }
 }
 
@@ -32,16 +34,7 @@ struct BodyTextStyle: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .font(.system(size: 14))
-            .fontWeight(.light)
-    }
-}
-
-// style modifier for welcome Screen texts
-struct WelcomeTextStyle: ViewModifier {
-
-    func body(content: Content) -> some View {
-        content
-            .font(.system(size: 14))
+            .font(.system(size: 12))
+            .foregroundStyle(.bodyBlack)
     }
 }

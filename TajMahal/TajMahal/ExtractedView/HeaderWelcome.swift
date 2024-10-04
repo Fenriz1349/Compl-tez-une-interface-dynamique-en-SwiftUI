@@ -23,7 +23,7 @@ struct HeaderWelcome: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 40, height: 40)
-                .foregroundColor(.gray)
+                .foregroundColor(.logoGray)
         }
         .frame(height: 40)
     }

@@ -9,12 +9,45 @@ import SwiftUI
 
 // Menu sous forme de liste
 struct MenuView: View {
-    // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
-    let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        List {
-            // À completer
+            NavigationStack {
+                ZStack{
+                Color(.lightBackground)
+                    .ignoresSafeArea()
+                    
+                ScrollView {
+                    HStack {
+                        Text("Entrées")
+                            .modifier(TitleTextStyle())
+                        Spacer()
+                    }
+                    
+                    ForEach(Dishes.allAppetizer, id: \.self) { dish in
+                        DishCard(dish: dish)
+                            .padding(.vertical,12)
+                    }
+                    HStack {
+                        Text("Plats Principaux")
+                            .modifier(TitleTextStyle())
+                        Spacer()
+                    }
+                    
+                    ForEach(Dishes.allMainCrouser, id: \.self) { dish in
+                        DishCard(dish: dish)
+                            .padding(.vertical,12)
+                    }
+                }
+                .navigationTitle("Menu")
+                .navigationBarBackButtonHidden(true)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        CustomBackButton()
+                    }
+                }
+                .padding(.horizontal,20)
+            }
         }
     }
 }

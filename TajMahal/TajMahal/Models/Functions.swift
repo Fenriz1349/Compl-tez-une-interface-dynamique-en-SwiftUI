@@ -18,7 +18,7 @@ func getScheduleOfDay(_ day: Date) -> String {
         return "11h30 - 14h30 · 18h30 - 22h00"
     case "mercredi" :
         return "11h30 - 14h30 · 18h30 - 22h00"
-    case "jeud" :
+    case "jeudi" :
         return "11h30 - 14h30 · 18h30 - 22h00"
     case "vendredi" :
         return "11h30 - 14h30 · 18h30 - 23h00"

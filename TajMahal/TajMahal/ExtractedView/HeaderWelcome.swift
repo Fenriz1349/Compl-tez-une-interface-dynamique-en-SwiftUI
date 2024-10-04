@@ -11,14 +11,14 @@ struct HeaderWelcome: View {
     var body: some View {
         HStack{
             VStack(alignment: .leading) {
-                Text("Restaurant Indien")
+                Text(WelcomeContent.restaurantType.content)
                     .modifier(BodyTextStyle())
                 Spacer()
-                Text("Taj Mahal")
+                Text(WelcomeContent.restaurantName.content)
                     .modifier(MainTitleTextStyle())
             }
             Spacer()
-            Image(ImageName.logo.rawValue)
+            Image(.logo)
                 .renderingMode(.template) // Rendre l'image modifiable en tant que template
                 .resizable()
                 .scaledToFit()

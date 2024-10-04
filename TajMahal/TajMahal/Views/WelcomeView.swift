@@ -15,17 +15,17 @@ struct WelcomeView: View {
     }
     var body: some View {
         NavigationStack {
-            Image(ImageName.tajmahal.rawValue)
+            Image(.tajMahal)
                 .padding(.top,10)
             Spacer()
             HeaderWelcome()
             Spacer()
             VStack {
-                WelcomeRow(symbol: .clock, contentLeading: dateString, contentTrailing: getScheduleOfDay(date))
-                WelcomeRow(symbol: .serviceType, contentLeading: "Types de Service", contentTrailing: "à emporter")
-                WelcomeRow(symbol: .location, contentLeading: "12 avenue de la Brique - 75010 Paris")
-                WelcomeRow(symbol: .website, contentLeading: "www.tajmahal.fr")
-                WelcomeRow(symbol: .phone, contentLeading: "06 12 34 56 78")
+                WelcomeRow(symbol: .clock, contentLeading: .day, contentTrailing: .schedule)
+                WelcomeRow(symbol: .serviceType, contentLeading: .serviceTypeCategory, contentTrailing: .serviceTypeName)
+                WelcomeRow(symbol: .location, contentLeading: .location)
+                WelcomeRow(symbol: .internetSite, contentLeading: .website)
+                WelcomeRow(symbol: .phone, contentLeading: .phoneNumber)
             }
             Spacer()
             NavigationLink {
@@ -33,7 +33,7 @@ struct WelcomeView: View {
             } label : {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
-                        .foregroundStyle(Color ("CustomRed"))
+                        .foregroundStyle(.customRed)
                         .frame(height: 40)
                     Text("Accéder au Menu")
                         .foregroundStyle(.white)

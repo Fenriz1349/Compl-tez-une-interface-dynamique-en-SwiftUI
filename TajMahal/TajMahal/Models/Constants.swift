@@ -7,27 +7,21 @@
 
 import Foundation
 
-//enum de la liste des noms des images
 
-enum ImageName : String{
-    // image générique
-    case logo = "Logo"
-    case tajmahal = "TajMahal"
-
-    //image apetizers
-    case aloo = "Aloo"
-    case samosas = "Samosas"
-    case pakoras = "Pakoras"
-
-    //image mainCourse
-    case biryani = "Biryani"
-    case roganJosh = "Rogan Josh"
-    case tikkaMasala = "Tikka Masala"
+// Struct des contenus de l'écran d'acceuil
+struct WelcomeContent {
+    let content: String
+    // Header de l'écran d'acceuil
+    static let restaurantType = WelcomeContent(content: "Restaurant Indien")
+    static let restaurantName = WelcomeContent(content: "Taj Mahal")
     
-    //symbols pour le WelcomeScreen
-    case clock = "Clock"
-    case serviceType = "Service Type"
-    case location = "Location"
-    case website = "Internet Site"
-    case phone = "Phone"
+    // Contenu des lignes
+    static let day = WelcomeContent(content: getDayInString(of: Date()))
+    static let schedule = WelcomeContent(content: getScheduleOfDay(Date()))
+    static let serviceTypeCategory = WelcomeContent(content: "Types de Service")
+    static let serviceTypeName = WelcomeContent(content: "à emporter")
+    static let location = WelcomeContent(content: "12 avenue de la Brique - 75010 Paris")
+    static let website = WelcomeContent(content: "www.tajmahal.fr")
+    static let phoneNumber = WelcomeContent(content: "06 12 34 56 78")
+    
 }

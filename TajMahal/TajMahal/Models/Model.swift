@@ -21,5 +21,5 @@ struct Dish {
     var allergens: String
     var ingredients: String
     var spiceLevel: SpiceLevel
-    var imageName: ImageName
+    var imageName: ImageResource
 }

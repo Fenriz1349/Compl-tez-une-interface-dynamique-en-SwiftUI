@@ -10,10 +10,10 @@ import Foundation
 // Strcture qui gère toute la logique du code
 // Fait l'intermédiaire entre l'affichage et les données
 
-enum Dishes : CaseIterable {
+enum Menu : CaseIterable {
     case samosas, pakoras, aloo, tikkaMasala ,biryani, roganJosh
     
-    var item: Dish {
+    var dish: Dish {
         switch self {
         // Stocke les entrées qui composent le menu du restaurant
         case .samosas : Dish(name: "Samosas aux légumes", category: .appetizer, description: "Délicieux chaussons frits garnis de légumes épicés", allergens: "Farine de blé", price: 5, ingredients: "Mélange de légumes (pommes de terre, petits pois, carottes), épices indiennes, pâte à samosa, huile", spiceLevel: .light, imageName: .samosas)
@@ -28,14 +28,14 @@ enum Dishes : CaseIterable {
     
     // var static pour acceder plus facilement au elements
     static var allDishes: [Dish] {
-        return Dishes.allCases.map { $0.item }
+        return Menu.allCases.map { $0.dish }
     }
     
-    static var allAppetizer: [Dishes] {
-        return Dishes.allCases.filter { $0.item.category == .appetizer }
+    static var allAppetizer: [Menu] {
+        return Menu.allCases.filter { $0.dish.category == .appetizer }
     }
     
-   static var allMainCrouser: [Dishes] {
-        return Dishes.allCases.filter { $0.item.category == .mainCourse }
+   static var allMainCrouser: [Menu] {
+        return Menu.allCases.filter { $0.dish.category == .mainCourse }
     }
 }

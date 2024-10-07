@@ -26,7 +26,7 @@ struct Dish {
     let imageName: ImageResource
 }
 
-enum DishCategory {
-    case appetizer
-    case mainCourse
+enum DishCategory: String, CaseIterable {
+    case appetizer = "Entrée"
+    case mainCourse = "Plat Principal"
 }

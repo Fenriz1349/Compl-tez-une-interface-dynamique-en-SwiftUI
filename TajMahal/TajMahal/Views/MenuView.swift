@@ -9,44 +9,53 @@ import SwiftUI
 
 // Menu sous forme de liste
 struct MenuView: View {
-    
+    @State var category: DishCategory = .appetizer
     var body: some View {
-            NavigationStack {
-                ZStack{
+        NavigationStack {
+            ZStack{
                 Color(.lightBackground)
                     .ignoresSafeArea()
-                    
-                ScrollView {
-                    HStack {
-                        Text("Entrées")
-                            .modifier(TitleTextStyle())
-                        Spacer()
+                VStack{
+                    Picker("Type :", selection: $category) {
+                        ForEach(DishCategory.allCases, id: \.self) { category in
+                            Text(category.rawValue)
+                                .tag(category as DishCategory?)
+                        }
                     }
-                    
-                    ForEach(Dishes.allAppetizer, id: \.self) { dish in
-                        DishCard(dish: dish)
-                            .padding(.vertical,12)
+                    .pickerStyle(.segmented)
+                    .padding(.horizontal,20)
+                    ScrollView {
+                        HStack {
+                            Text("Entrées")
+                                .modifier(TitleTextStyle())
+                            Spacer()
+                        }
+                        
+                        ForEach(Menu.allAppetizer, id: \.self) { dish in
+                            DishCard(dish: dish)
+                                .padding(.vertical,12)
+                        }
+                        HStack {
+                            Text("Plats Principaux")
+                                .modifier(TitleTextStyle())
+                            Spacer()
+                        }
+                        
+                        ForEach(Menu.allMainCrouser, id: \.self) { dish in
+                            DishCard(dish: dish)
+                                .padding(.vertical,12)
+                        }
                     }
-                    HStack {
-                        Text("Plats Principaux")
-                            .modifier(TitleTextStyle())
-                        Spacer()
+                    .navigationTitle("Menu")
+                    .navigationBarBackButtonHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            CustomBackButton()
+                        }
                     }
-                    
-                    ForEach(Dishes.allMainCrouser, id: \.self) { dish in
-                        DishCard(dish: dish)
-                            .padding(.vertical,12)
-                    }
+                    .padding(.horizontal,20)
                 }
-                .navigationTitle("Menu")
-                .navigationBarBackButtonHidden(true)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        CustomBackButton()
-                    }
-                }
-                .padding(.horizontal,20)
             }
         }
     }

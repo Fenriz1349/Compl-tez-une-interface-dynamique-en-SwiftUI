@@ -26,5 +26,5 @@ struct ImageAndPiment: View {
 }
 
 #Preview {
-    ImageAndPiment(image: .samosas, spiceLevel: .medium)
+    ImageAndPiment(image: .tikkaMasala, spiceLevel: .medium)
 }

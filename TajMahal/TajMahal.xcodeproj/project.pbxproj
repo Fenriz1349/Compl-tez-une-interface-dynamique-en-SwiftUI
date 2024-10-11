@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		428D2B512AFA851900BBA4F5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B502AFA851900BBA4F5 /* Model.swift */; };
-		428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B522AFA882700BBA4F5 /* ViewModel.swift */; };
+		428D2B532AFA882700BBA4F5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D2B522AFA882700BBA4F5 /* Menu.swift */; };
 		42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */; };
 		42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB12AF11138007CE7D0 /* Assets.xcassets */; };
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		428D2B502AFA851900BBA4F5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		428D2B522AFA882700BBA4F5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		428D2B522AFA882700BBA4F5 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		42E9DCAA2AF11136007CE7D0 /* TajMahal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TajMahal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajMahalApp.swift; sourceTree = "<group>"; };
 		42E9DCB12AF11138007CE7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 			children = (
 				68CBE20C2CA6DBF700064CC5 /* Constants.swift */,
 				428D2B502AFA851900BBA4F5 /* Model.swift */,
-				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
+				428D2B522AFA882700BBA4F5 /* Menu.swift */,
 				68CBE2122CA6E93000064CC5 /* TextStyles.swift */,
 				688777852CA6FA6D00D5D1D2 /* Functions.swift */,
 			);
@@ -249,7 +249,7 @@
 				688777842CA6F74500D5D1D2 /* String+Extensions.swift in Sources */,
 				6836C20D2CB925DC00138718 /* View+Extensions.swift in Sources */,
 				68AD7A542CB00CD50084D274 /* SpiceLevelCard.swift in Sources */,
-				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
+				428D2B532AFA882700BBA4F5 /* Menu.swift in Sources */,
 				68AD7A502CAFEC4A0084D274 /* MenuButton.swift in Sources */,
 				68CBE2112CA6DF8C00064CC5 /* WelcomeRow.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,

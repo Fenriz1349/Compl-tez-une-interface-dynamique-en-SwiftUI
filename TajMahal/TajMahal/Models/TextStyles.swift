@@ -8,7 +8,7 @@
 import SwiftUI
 
 // style modifier for Main Title
-struct MainTitleTextStyle: ViewModifier {
+struct MainTitleTextStyleModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
@@ -19,7 +19,7 @@ struct MainTitleTextStyle: ViewModifier {
 }
 
 // style modifier for Title
-struct TitleTextStyle: ViewModifier {
+struct TitleTextStyleModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
@@ -30,11 +30,12 @@ struct TitleTextStyle: ViewModifier {
 }
 
 // style modifier for body content
-struct BodyTextStyle: ViewModifier {
+struct BodyTextStyleModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
             .font(.system(size: 12))
             .foregroundStyle(.bodyBlack)
+            .multilineTextAlignment(.leading)
     }
 }

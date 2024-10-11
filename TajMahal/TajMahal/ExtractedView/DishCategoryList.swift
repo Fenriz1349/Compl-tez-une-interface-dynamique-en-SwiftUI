@@ -13,7 +13,7 @@ struct DishCategoryList: View {
         VStack {
             HStack {
                 Text(dishCategory.rawValue)
-                    .modifier(TitleTextStyle())
+                    .titleTextStyle()
                 Spacer()
             }
             .padding(.bottom,12)

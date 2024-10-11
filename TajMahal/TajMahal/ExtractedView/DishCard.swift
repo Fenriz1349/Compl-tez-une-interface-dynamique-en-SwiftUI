@@ -22,14 +22,14 @@ struct DishCard: View {
                     .padding(.horizontal,12)
                 VStack (alignment: .leading){
                     Text(dish.name)
-                        .modifier(TitleTextStyle())
+                        .titleTextStyle()
                     Spacer()
                     Text(dish.description)
-                        .modifier(BodyTextStyle())
+                        .bodyTextStyle()
                     Spacer()
                     HStack{
                         Text(dish.price.toEuroFormat())
-                            .modifier(TitleTextStyle())
+                            .titleTextStyle()
                         Spacer()
                         SpiceLevelCard(spiceLevel: dish.spiceLevel)
                     }

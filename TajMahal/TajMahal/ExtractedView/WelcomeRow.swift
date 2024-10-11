@@ -18,11 +18,11 @@ struct WelcomeRow: View {
                 .scaledToFit()
                 .frame(width: 14, height: 14)
             Text(contentLeading.content.capitalizeFirstLetter())
-                .modifier(BodyTextStyle())
+                .bodyTextStyle()
             Spacer()
             if let content = contentTrailing?.content {
                 Text(content.capitalizeFirstLetter())
-                    .modifier(BodyTextStyle())
+                    .bodyTextStyle()
                     .fontWeight(.medium)
             }
         }

@@ -22,11 +22,11 @@ struct CustomNavigationTitleModifier: ViewModifier {
                 ToolbarItem(placement: .principal) {
                     if title == "menu" {
                         Text(title.capitalized)
-                            .modifier(MainTitleTextStyle())
+                            .mainTitleTextStyle()
                     } else {
                         HStack {
                             Text(title.capitalized)
-                                .modifier(MainTitleTextStyle())
+                                .mainTitleTextStyle()
                             Spacer()
                         }
                     }

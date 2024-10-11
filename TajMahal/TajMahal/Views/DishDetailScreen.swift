@@ -15,10 +15,12 @@ struct DishDetailScreen: View {
                 .ignoresSafeArea()
             Text(dish.name)
         }
-        
+        .CustomNavigationTitle(dish.name)
     }
 }
 
 #Preview {
-    DishDetailScreen(dish: Menu.allDishes.first!)
+    NavigationStack {
+        DishDetailScreen(dish: Menu.allDishes.first!)
+    }
 }

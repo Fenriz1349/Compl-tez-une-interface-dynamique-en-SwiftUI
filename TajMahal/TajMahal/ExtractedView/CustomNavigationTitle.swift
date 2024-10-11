@@ -7,12 +7,47 @@
 
 import SwiftUI
 
-struct CustomNavigationTitle: View {
+struct CustomNavigationTitleModifier: ViewModifier {
+    var title: String
+    
+    func body(content: Content) -> some View {
+        content
+            .navigationTitle("")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    CustomBackButton()
+                }
+                ToolbarItem(placement: .principal) {
+                    if title == "menu" {
+                        Text(title.capitalized)
+                            .modifier(MainTitleTextStyle())
+                    } else {
+                        HStack {
+                            Text(title.capitalized)
+                                .modifier(MainTitleTextStyle())
+                            Spacer()
+                        }
+                    }
+                }
+            }
+    }
+}
+
+struct NavigationTitleModifierTestView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("This is a test view")
+            }
+            .CustomNavigationTitle("Test Title")
+        }
     }
 }
 
 #Preview {
-    CustomNavigationTitle()
+    NavigationStack {
+        NavigationTitleModifierTestView()
+    }
 }

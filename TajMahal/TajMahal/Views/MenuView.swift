@@ -19,16 +19,9 @@ struct MenuView: View {
                         DishCategoryList(dishCategory: dishCategory)
                     }
                 }
-                .navigationTitle("Menu")
-                .navigationBarBackButtonHidden(true)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        CustomBackButton()
-                    }
-                }
             }
         }
+        .CustomNavigationTitle("menu")
     }
 }
 

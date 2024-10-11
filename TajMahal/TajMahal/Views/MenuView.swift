@@ -20,6 +20,7 @@ struct MenuView: View {
                     }
                 }
             }
+            .padding(.horizontal,20)
         }
         .CustomNavigationTitle("menu")
     }

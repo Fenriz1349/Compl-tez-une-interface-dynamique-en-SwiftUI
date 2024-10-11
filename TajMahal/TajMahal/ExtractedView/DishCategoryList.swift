@@ -16,7 +16,6 @@ struct DishCategoryList: View {
                     .titleTextStyle()
                 Spacer()
             }
-            .padding(.bottom,12)
             
             ForEach(Menu.allDishOfCategory(of: dishCategory), id: \.self.name) { dish in
                 NavigationLink(destination: DishDetailScreen(dish: dish)){
@@ -25,7 +24,6 @@ struct DishCategoryList: View {
                 }
             }
         }
-        .padding(.horizontal,12)
     }
 }
 

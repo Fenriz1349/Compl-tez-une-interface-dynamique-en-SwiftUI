@@ -14,7 +14,7 @@ struct MainTitleTextStyleModifier: ViewModifier {
         content
             .font(.system(size: 18))
             .foregroundStyle(.titleBlack)
-            .fontWeight(.bold)
+            .fontWeight(.semibold)
     }
 }
 

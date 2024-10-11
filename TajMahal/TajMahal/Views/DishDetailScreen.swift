@@ -32,6 +32,6 @@ struct DishDetailScreen: View {
 
 #Preview {
     NavigationStack {
-        DishDetailScreen(dish: Menu.tikkaMasala.dish)
+        DishDetailScreen(dish: Menu.samosas.dish)
     }
 }

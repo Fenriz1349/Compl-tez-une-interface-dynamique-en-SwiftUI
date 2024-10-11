@@ -27,6 +27,6 @@ struct Dish {
 }
 
 enum DishCategory: String, CaseIterable {
-    case appetizer = "Entrée"
-    case mainCourse = "Plat Principal"
+    case appetizer = "Entrées"
+    case mainCourse = "Plats Principaux"
 }

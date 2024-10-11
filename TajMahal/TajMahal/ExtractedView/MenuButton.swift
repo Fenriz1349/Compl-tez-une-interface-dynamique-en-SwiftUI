@@ -15,6 +15,7 @@ struct MenuButton: View {
                 .frame(height: 40)
             Text("Accéder au Menu")
                 .foregroundStyle(.white)
+                .mainTitleTextStyle()
         }
     }
 }

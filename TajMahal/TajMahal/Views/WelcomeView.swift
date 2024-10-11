@@ -25,7 +25,7 @@ struct WelcomeView: View {
                     Spacer()
                     HeaderWelcome()
                     Spacer()
-                    VStack {
+                    VStack(spacing:12) {
                         WelcomeRow(symbol: .clock, contentLeading: .day, contentTrailing: .schedule)
                         WelcomeRow(symbol: .serviceType, contentLeading: .serviceTypeCategory, contentTrailing: .serviceTypeName)
                         WelcomeRow(symbol: .location, contentLeading: .location)

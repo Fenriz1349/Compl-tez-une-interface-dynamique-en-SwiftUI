@@ -17,7 +17,7 @@ struct WelcomeRow: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 14, height: 14)
-            Text(contentLeading.content.first != "w" ? contentLeading.content.capitalizeFirstLetter() : contentLeading.content)
+            Text(contentLeading.content.capitalizeFirstLetter())
                 .modifier(BodyTextStyle())
             Spacer()
             if let content = contentTrailing?.content {

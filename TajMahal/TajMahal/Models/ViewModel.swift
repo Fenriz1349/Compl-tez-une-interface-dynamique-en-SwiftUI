@@ -31,11 +31,7 @@ enum Menu : CaseIterable {
         return Menu.allCases.map { $0.dish }
     }
     
-    static var allAppetizer: [Menu] {
-        return Menu.allCases.filter { $0.dish.category == .appetizer }
-    }
-    
-   static var allMainCrouser: [Menu] {
-        return Menu.allCases.filter { $0.dish.category == .mainCourse }
+    static func allDishOfCategory(of category: DishCategory) -> [Dish] {
+        return Menu.allCases.filter { $0.dish.category == category }.map{ $0.dish }
     }
 }

@@ -11,10 +11,10 @@ struct HeaderWelcome: View {
     var body: some View {
         HStack{
             VStack(alignment: .leading) {
-                Text(WelcomeContent.restaurantType.content)
+                Text(WelcomeContent.restaurantType.content.capitalized)
                     .modifier(BodyTextStyle())
                 Spacer()
-                Text(WelcomeContent.restaurantName.content)
+                Text(WelcomeContent.restaurantName.content.capitalized)
                     .modifier(MainTitleTextStyle())
             }
             Spacer()

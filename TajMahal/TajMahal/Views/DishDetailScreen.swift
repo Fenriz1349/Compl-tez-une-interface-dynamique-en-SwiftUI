@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct DishDetailScreen: View {
+    var dish: Dish
     var body: some View {
         ZStack{
             Color.lightBackground
                 .ignoresSafeArea()
-            Text("Detail du plat")
+            Text(dish.name)
         }
         
     }
 }
 
 #Preview {
-    DishDetailScreen()
+    DishDetailScreen(dish: Menu.allDishes.first!)
 }

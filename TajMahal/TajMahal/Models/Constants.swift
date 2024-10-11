@@ -12,8 +12,8 @@ import Foundation
 struct WelcomeContent {
     let content: String
     // Header de l'écran d'acceuil
-    static let restaurantType = WelcomeContent(content: "Restaurant Indien")
-    static let restaurantName = WelcomeContent(content: "Taj Mahal")
+    static let restaurantType = WelcomeContent(content: "restaurant indien")
+    static let restaurantName = WelcomeContent(content: "taj mahal")
     
     // Contenu des lignes
     static let day = WelcomeContent(content: getDayInString(of: Date()))

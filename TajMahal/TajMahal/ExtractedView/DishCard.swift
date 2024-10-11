@@ -8,39 +8,40 @@
 import SwiftUI
 
 struct DishCard: View {
-    let dish: Menu
+    let dish: Dish
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15.0)
                 .foregroundStyle(.white)
-            HStack{
-                Image(dish.dish.imageName)
+            HStack {
+                Image(dish.imageName)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 112,height: 96)
+                    .frame(width: 112,height: 86)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
-                    .padding(.trailing,25)
+                    .padding(.horizontal,12)
                 VStack (alignment: .leading){
-                    Text(dish.dish.name)
+                    Text(dish.name)
                         .modifier(TitleTextStyle())
                     Spacer()
-                    Text(dish.dish.description)
+                    Text(dish.description)
                         .modifier(BodyTextStyle())
                     Spacer()
                     HStack{
-                        Text(dish.dish.price.toEuroFormat())
+                        Text(dish.price.toEuroFormat())
                             .modifier(TitleTextStyle())
                         Spacer()
-                        SpiceLevelCard(spiceLevel: dish.dish.spiceLevel)
+                        SpiceLevelCard(spiceLevel: dish.spiceLevel)
                     }
                 }
+                .padding(.horizontal,12)
             }
-            .padding(12)
+            .frame(height: 86)
         }
         .frame(height: 110)
     }
 }
 
 #Preview {
-    DishCard(dish: .samosas)
+    DishCard(dish: Menu.aloo.dish)
 }

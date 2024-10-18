@@ -10,8 +10,8 @@ import SwiftUI
 extension Font {
     static func plusJakartaSans(size: CGFloat, weight: Font.Weight = .regular) -> Font {
         switch weight {
-        case .black :
-            return Font.custom("PlusJakartaSans-ExtraBold", size: size)
+        case .semibold :
+            return Font.custom("PlusJakartaSans-Medium", size: size)
         case .bold :
             return Font.custom("PlusJakartaSans-Bold", size: size)
         default :

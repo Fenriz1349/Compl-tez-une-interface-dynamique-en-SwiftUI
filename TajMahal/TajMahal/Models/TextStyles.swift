@@ -14,7 +14,7 @@ struct MainTitleTextStyleModifier: ViewModifier {
         content
             .font(.system(size: 18))
             .foregroundStyle(.titleBlack)
-            .fontWeight(.semibold)
+            .fontWeight(.bold)
     }
 }
 
@@ -34,7 +34,7 @@ struct BodyTextStyleModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .font(.system(size: 12))
+            .plusJakartaSans(size: 12)
             .foregroundStyle(.bodyBlack)
             .multilineTextAlignment(.leading)
     }

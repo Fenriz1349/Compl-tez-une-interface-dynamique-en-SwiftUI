@@ -15,8 +15,8 @@ enum Menu : CaseIterable {
     
     var dish: Dish {
         switch self {
-        // Stocke les entrées qui composent le menu du restaurant
-        case .samosas : Dish(name: "Samosas aux légumes", 
+            //MARK: - Les entrées qui composent le menu du restaurant
+        case .samosas : Dish(name: "Samosas aux légumes",
                              category: .appetizer,
                              description: "Délicieux chaussons frits garnis de légumes épicé.",
                              allergens: "Farine de blé.",
@@ -40,7 +40,8 @@ enum Menu : CaseIterable {
                             ingredients: "Pommes de terre, épices, farine de pois chiches.",
                             spiceLevel: .medium,
                             imageName: .aloo)
-        // Stocke les plats principaux qui composent le menu du restaurant
+            
+        //MARK: - les plats principaux qui composent le menu du restaurant
         case .tikkaMasala: Dish(name: "Chicken Tikka Masala",
                             category:.mainCourse,
                             description: "Poulet mariné, grillé et servi dans une sauce masala",
@@ -73,6 +74,7 @@ enum Menu : CaseIterable {
         return Menu.allCases.map { $0.dish }
     }
     
+    // Fonction pour récuperer uniquement les plats d'une catégorie
     static func allDishOfCategory(of category: DishCategory) -> [Dish] {
         return Menu.allCases.filter { $0.dish.category == category }.map{ $0.dish }
     }

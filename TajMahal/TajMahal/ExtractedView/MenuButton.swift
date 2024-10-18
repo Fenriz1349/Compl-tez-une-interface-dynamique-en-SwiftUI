@@ -13,9 +13,8 @@ struct MenuButton: View {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundStyle(.customRed)
                 .frame(height: 40)
-            Text("Accéder au Menu")
-                .foregroundStyle(.white)
-                .mainTitleTextStyle()
+            Text("Accéder au menu")
+                .menuButtonStyle()
         }
     }
 }

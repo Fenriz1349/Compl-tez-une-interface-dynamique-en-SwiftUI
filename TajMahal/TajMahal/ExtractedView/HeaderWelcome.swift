@@ -19,7 +19,7 @@ struct HeaderWelcome: View {
             }
             Spacer()
             Image(.logo)
-                .renderingMode(.template) // Rendre l'image modifiable en tant que template
+                .renderingMode(.template) // Rend l'image modifiable en tant que template pour changer sa couleur
                 .resizable()
                 .scaledToFit()
                 .frame(width: 40, height: 40)

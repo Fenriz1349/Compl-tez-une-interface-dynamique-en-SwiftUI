@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension Font {
+    // Fonction pour appliquer la police plus Jakarta Sans
     static func plusJakartaSans(size: CGFloat, weight: Font.Weight = .regular) -> Font {
         switch weight {
         case .semibold :

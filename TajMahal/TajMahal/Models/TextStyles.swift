@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// style modifier for Main Title
+// style modifier pour les titres principaux
 struct MainTitleTextStyleModifier: ViewModifier {
 
     func body(content: Content) -> some View {
@@ -18,18 +18,18 @@ struct MainTitleTextStyleModifier: ViewModifier {
     }
 }
 
-// style modifier for Title
+// style modifier pour les titres
 struct TitleTextStyleModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
             .font(.system(size: 14))
             .foregroundStyle(.bodyBlack)
-            .fontWeight(.bold)
+            .fontWeight(.semibold)
     }
 }
 
-// style modifier for body content
+// style modifier pour le corps de texte
 struct BodyTextStyleModifier: ViewModifier {
 
     func body(content: Content) -> some View {
@@ -37,5 +37,16 @@ struct BodyTextStyleModifier: ViewModifier {
             .plusJakartaSans(size: 12)
             .foregroundStyle(.bodyBlack)
             .multilineTextAlignment(.leading)
+    }
+}
+
+// style modifier pour le MenuButton
+struct MenuButtonTextStyleModifier: ViewModifier {
+
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 16))
+            .foregroundStyle(.white)
+            .fontWeight(.bold)
     }
 }

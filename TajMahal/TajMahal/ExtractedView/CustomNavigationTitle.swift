@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// ViewModifier pour customiser le titre de Navigation
 struct CustomNavigationTitleModifier: ViewModifier {
     var title: String
     
@@ -32,22 +33,5 @@ struct CustomNavigationTitleModifier: ViewModifier {
                     }
                 }
             }
-    }
-}
-
-struct NavigationTitleModifierTestView: View {
-    var body: some View {
-        NavigationView {
-            VStack {
-                Text("This is a test view")
-            }
-            .CustomNavigationTitle("Test Title")
-        }
-    }
-}
-
-#Preview {
-    NavigationStack {
-        NavigationTitleModifierTestView()
     }
 }

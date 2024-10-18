@@ -19,6 +19,7 @@ struct PlusJakartaSansModifier: ViewModifier {
 
 extension View {
     
+    // Fonction pour appliquer un TextModifier
     func CustomNavigationTitle(_ title: String) -> some View {
         self.modifier(CustomNavigationTitleModifier(title: title))
     }
@@ -35,8 +36,10 @@ extension View {
         self.modifier(BodyTextStyleModifier())
     }
     
+    func menuButtonStyle() -> some View {
+        self.modifier(MenuButtonTextStyleModifier())
+    }
     
-
     func plusJakartaSans(size: CGFloat, weight: Font.Weight = .regular) -> some View {
         self.modifier(PlusJakartaSansModifier(size: size, weight: weight))
     }

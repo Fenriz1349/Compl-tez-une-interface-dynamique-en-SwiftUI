@@ -12,7 +12,6 @@ struct TajMahalApp: App {
     var body: some Scene {
         WindowGroup {
             WelcomeView()
-//                .plusJakartaSans(size: 12)
         }
     }
 }

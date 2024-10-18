@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Fonction pour recuperer les horaires du jour présent
 func getScheduleOfDay(_ day: Date) -> String {
     
     let dayString = getDayInString(of: day)
@@ -30,6 +31,7 @@ func getScheduleOfDay(_ day: Date) -> String {
     }
 }
 
+// Fonction pour renvoyer une String en français d'un jour
 func getDayInString(of day: Date) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.locale = Locale(identifier: "fr_FR")

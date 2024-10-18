@@ -15,7 +15,7 @@ struct WelcomeContent {
     static let restaurantType = WelcomeContent(content: "restaurant indien")
     static let restaurantName = WelcomeContent(content: "taj mahal")
     
-    // Contenu des lignes
+    // Contenu des lignes de l'écran d'acceuil
     static let day = WelcomeContent(content: getDayInString(of: Date()))
     static let schedule = WelcomeContent(content: getScheduleOfDay(Date()))
     static let serviceTypeCategory = WelcomeContent(content: "Types de Service")

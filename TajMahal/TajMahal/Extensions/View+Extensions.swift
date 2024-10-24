@@ -36,6 +36,10 @@ extension View {
         self.modifier(BodyTextStyleModifier())
     }
     
+    func boldBodyTextStyle() -> some View {
+        self.modifier(BoldBodyTextStyleModifier())
+    }
+    
     func menuButtonStyle() -> some View {
         self.modifier(MenuButtonTextStyleModifier())
     }

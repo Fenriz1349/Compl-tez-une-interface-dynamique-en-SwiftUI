@@ -40,6 +40,16 @@ struct BodyTextStyleModifier: ViewModifier {
     }
 }
 
+// style modifier pour le corps de texte en bold
+struct BoldBodyTextStyleModifier: ViewModifier {
+
+    func body(content: Content) -> some View {
+        content
+            .plusJakartaSans(size: 12,weight: .bold)
+            .foregroundStyle(.bodyBlack)
+            .multilineTextAlignment(.leading)
+    }
+}
 // style modifier pour le MenuButton
 struct MenuButtonTextStyleModifier: ViewModifier {
 

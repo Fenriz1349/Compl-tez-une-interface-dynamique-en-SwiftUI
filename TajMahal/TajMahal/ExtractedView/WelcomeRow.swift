@@ -22,8 +22,7 @@ struct WelcomeRow: View {
             Spacer()
             if let content = contentTrailing?.content {
                 Text(content.capitalizeFirstLetter())
-                    .bodyTextStyle()
-                    .fontWeight(.bold)
+                    .boldBodyTextStyle()
             }
         }
     }
